@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+
+.cell{
+    height: 90px;
+    width: 90px;
+
+    border: 5px solid black;;
+    border-radius:50%;
+    background-color: white;
+
+    margin: 5px;
+}
+#board {
+    border: 10px solid black;
+    background: yellow;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 660px;
+    width: 770px;
+    margin: 0 auto;
+}
+
+.reset{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    background: teal;
+
+    width:200px;
+    margin: 20px auto;
+}

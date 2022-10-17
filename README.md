@@ -12,16 +12,20 @@
 ```js
 variables -----
 
-let board = document.querySelector(...)
-let player = document...
-let playAgain = document...
-let reset = document...
+let board = document.querySelector(".board")
+let player = document.querySelector(".player")
+let playAgain = document.querySelector(".playAgain")
+let reset = document.querySelector(".reset")
 let winningArray = [[x, x, x, x]...]
 
 functions -----
 
 function gameStart(start){
     //loads in current player, board, and event listener to listen for clicks
+}
+
+function createBoard(board){
+    //create gameboard and cells
 }
 
 function switchTurn(turn){
