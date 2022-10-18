@@ -1,45 +1,47 @@
-body{
+body {
+    justify-content: center;
     text-align: center;
+    align-items: center;
 }
+.grid {
+    height: 660px;
+    width: 750px;
+    margin: auto;
 
-#board {
-    border: 10px solid black;
-    background-color: goldenrod;
-    
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    
-    height: 660px;
-    width: 770px;
-}
 
-.cell{
+    border: 3px solid black;
+    background-color: goldenrod;
+  }
+  .grid div {
     height: 90px;
     width: 90px;
 
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius:50%;
-    background-color: white;
 
     margin: 5px;
-}
+  }
 
-.reset{
+  .resetButton {
     display: grid;
     justify-content: center;
     align-items: center;
 
-    background: teal;
-
     width:200px;
+    height: 50px;
     margin: 20px auto;
-}
+  }
 
-.red-Token {
-    background-color:red;
-}
+  .colorOne {
+    background-color: red;
+  }
 
-.yellow-Token{
-    background-color:yellow;
-}
+  .colorTwo {
+    background-color: yellow;
+  }
+  
+  .unclaimed{
+    background-color: white;
+  }

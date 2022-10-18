@@ -6,17 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
-    <title>Connect Four</title>
+    <title>Connect Four by Jake</title>
 </head>
 <body>
-    <h1>Connect Four</h1>
-    <div class="container">
-        <div class="currentPlayer"> The current player is <span class="player"></span>
-        <div id="board"> 
-        </div>
-        <div class="reset">
-            <button class="playAgain">Play again</button>
-        </div>
+   <h1> Connect Four</h1>
+   <h2>The current Player is: <span class="player "></span></h2>
+   <h3>Scoreboard</h3> 
+   <h4>Player 1: <span class= "p1Score">0</span> | Player 2: <span class= "p2Score">0</span></h4>
+        <div class="grid" id="grid">
+            <div class="row1 column1 unclaimed"></div>
+            <div class="row1 column2 unclaimed"></div>
+            <div class="row1 column3 unclaimed"></div>
+            <div class="row1 column4 unclaimed"></div>
+            <div class="row1 column5 unclaimed"></div>
+            <div class="row1 column6 unclaimed"></div>
+            <div class="row1 column7 unclaimed"></div>
+            <div class="row2 column1 unclaimed"></div>
+            <div class="row2 column2 unclaimed"></div>
+            <div class="row2 column3 unclaimed"></div>
+            <div class="row2 column4 unclaimed"></div>
+            <div class="row2 column5 unclaimed"></div>
+            <div class="row2 column6 unclaimed"></div>
+            <div class="row2 column7 unclaimed"></div>
+            <div class="row3 column1 unclaimed"></div>  
+            <div class="row3 column2 unclaimed"></div>
+            <div class="row3 column3 unclaimed"></div>
+            <div class="row3 column4 unclaimed"></div>
+            <div class="row3 column5 unclaimed"></div>
+            <div class="row3 column6 unclaimed"></div>
+            <div class="row3 column7 unclaimed"></div>
+            <div class="row4 column1 unclaimed"></div>  
+            <div class="row4 column2 unclaimed"></div>
+            <div class="row4 column3 unclaimed"></div>
+            <div class="row4 column4 unclaimed"></div>
+            <div class="row4 column5 unclaimed"></div>
+            <div class="row4 column6 unclaimed"></div>
+            <div class="row4 column7 unclaimed"></div>
+            <div class="row5 column1 unclaimed"></div>  
+            <div class="row5 column2 unclaimed"></div>
+            <div class="row5 column3 unclaimed"></div>
+            <div class="row5 column4 unclaimed"></div>
+            <div class="row5 column5 unclaimed"></div>
+            <div class="row5 column6 unclaimed"></div>
+            <div class="row5 column7 unclaimed"></div>
+            <div class="row6 column1 unclaimed base"></div>  
+            <div class="row6 column2 unclaimed base"></div>
+            <div class="row6 column3 unclaimed base"></div>
+            <div class="row6 column4 unclaimed base"></div>
+            <div class="row6 column5 unclaimed base"></div>
+            <div class="row6 column6 unclaimed base"></div>
+            <div class="row6 column7 unclaimed base"></div>
+          </div>
     </div>
+    <button class = "resetButton"> Reset </button>
 </body>
 </html>
