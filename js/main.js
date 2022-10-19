@@ -18,8 +18,8 @@ const column7 = document.querySelectorAll('.column7')
 // const winningArray = [[x, x, x, x]]
 
 //state variables
-let playerOne = 'playerOne'
-let playerTwo = 'playerTwo'
+let playerOne = 'Player 1'
+let playerTwo = 'Player 2'
 let currentPlayer = playerOne
 
 let p1Score = 0
@@ -59,10 +59,10 @@ function createBoard() {
 function switchTurn() {
     if (currentPlayer === playerOne) {
         currentPlayer = playerTwo
-        player.innerHTML = currentPlayer
+        player.innerText = currentPlayer
     } else {
         currentPlayer = playerOne
-        player.innerHTML = currentPlayer
+        player.innerText = currentPlayer
     }
 }
 
@@ -73,15 +73,64 @@ testColumn()
 function testColumn() {
     column1.forEach(column => {
         column.addEventListener('click', () => {
-            if (column.classList.contains('base')){
-                alert("you clicked this column")
+            if (column.classList.contains('base')) {
             } else {
-                alert("you can't clcik this")
+                alert("Please click the bottom row to place your token")
             }
-        };
+        })
+    })
+    column2.forEach(column => {
+        column.addEventListener('click', () => {
+            if (column.classList.contains('base')) {
+            } else {
+                alert("Please click the bottom row to place your token")
+            }
+        })
+    })
+    column3.forEach(column => {
+        column.addEventListener('click', () => {
+            if (column.classList.contains('base')) {
+            } else {
+                alert("Please click the bottom row to place your token")
+            }
+        })
+    })
+    column4.forEach(column => {
+        column.addEventListener('click', () => {
+            if (column.classList.contains('base')) {
+            } else {
+                alert("Please click the bottom row to place your token")
+            }
+        })
+    })
+    column5.forEach(column => {
+        column.addEventListener('click', () => {
+            if (column.classList.contains('base')) {
+            } else {
+                alert("Please click the bottom row to place your token")
+            }
+        })
+    })
+    column6.forEach(column => {
+        column.addEventListener('click', () => {
+            if (column.classList.contains('base')) {
+            } else {
+                alert("Please click the bottom row to place your token")
+            }
+        })
+    })
+    column7.forEach(column => {
+        column.addEventListener('click', () => {
+            if (column.classList.contains('base')) {
+            } else {
+                alert("Please click the bottom row to place your token")
+            }
+        })
+    })
+}
 
-// dropToken()
-
+dropToken()
+//string interpolation trick
 function dropToken() {
     row1.forEach(row => {
         row.addEventListener('click', () => {
@@ -146,15 +195,37 @@ function dropToken() {
     row6.forEach(row => {
         row.addEventListener('click', () => {
             if (currentPlayer === playerOne && row.classList.contains('unclaimed')) {
-                row.classList.remove('unclaimed')
-                row.classList.add('colorOne')
-            } else if (row.classList.contains('unclaimed')) {
-                row.classList.remove('unclaimed')
-                row.classList.add('colorTwo')
-            }
-            switchTurn()
+                // for (let i = 6; i > 0; i++) {{
+                        row.classList.remove('unclaimed')
+                        row.classList.add('colorOne')
+                    } else if (row.classList.contains('unclaimed')) {
+                        row.classList.remove('unclaimed')
+                        row.classList.add('colorTwo')
+                    }
+                // }
+                switchTurn()
         })
     })
+
+    // column1.forEach(column => {
+    //     column.addEventListener('click', () => {
+    //         // for (let i = 6; i >= 0; i--) {
+    //             let i = 6
+    //             console.log(column)
+    //             while (i >= 0) {
+    //                 if (column.classList.contains('unclaimed')===false){
+    //                     i-- 
+    //                 } else if (currentPlayer === playerOne && column.classList.contains('unclaimed')){
+    //                     column.classList.remove('unclaimed')
+    //                     column.classList.add('colorOne')
+    //                 } else if (column.classList.contains('unclaimed')) {
+    //                     column.classList.remove('unclaimed')
+    //                     column.classList.add('colorTwo')
+    //                 }
+    //             }
+            // }
+    //     })
+    // })
     //lets player drop yellow or red coin/token into connect 4 slot
     //identify the connect 4 slot/cell with click then generate token into that cell
     //before generating token, check to see if cell is occupied or not
